@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Reserva de PCs</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="header-contenido">
+
+    <img src="imagenes/LOGO WEB PC.png" class="logo">
+
+    <h1 class="titulo">Reserva de PCs</h1>
+
+    <!-- MENÚ -->
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="confirmacion.html">Confirmar Reserva</a>
+    </nav>
+
+  </div>
+
+</header>
+
+<main>
+
+  <!-- LISTA DE PCs -->
+  <section class="card">
+
+    <h2>Estado de los PCs</h2>
+
+    <!-- Aquí JS mete los PCs -->
+    <div id="lista-pcs"></div>
+
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="card">
+
+    <h2>Formulario de Reserva</h2>
+
+    <form id="formReserva">
+
+      <label>Nombre:</label>
+      <input type="text" id="nombre">
+
+      <label>Grupo:</label>
+      <input type="text" id="grupo">
+
+      <label>Selecciona PC:</label>
+
+      <!-- Aquí JS mete las opciones -->
+      <select id="pcSeleccionado"></select>
+
+      <label>Motivo:</label>
+      <textarea id="motivo"></textarea>
+
+      <button type="submit" class="btn">
+        Reservar
+      </button>
+
+      <p id="error" class="error"></p>
+
+    </form>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <p>Proyecto Intermodular 2026</p>
+
+  <button onclick="resetearPCs()" class="btn1">
+    Siguiente día
+  </button>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

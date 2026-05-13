@@ -1,0 +1,230 @@
+
+/* ===== BASE ===== */
+
+body {
+  font-family:'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+
+/* ===== HEADER ===== */
+
+header {
+  background:
+    linear-gradient(
+      90deg,
+      #1e3a8a,
+      #2563eb
+    );
+
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.header-contenido {
+  display: grid;
+  grid-template-columns:auto 1fr auto;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.titulo {
+  margin: 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: underline;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+
+/* ===== MAIN ===== */
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* ===== CARD ===== */
+
+.card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== GRID PCs ===== */
+
+#lista-pcs {
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ===== PCs ===== */
+
+.pc {
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ===== ESTADOS ===== */
+
+.disponible {
+  background: #bbf7d0;
+}
+
+.reservado {
+  background: #fecaca;
+  opacity: 0.6;
+}
+
+/* ===== FORM ===== */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  width: 80%;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+form input,
+form select,
+form textarea {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: none;
+  height: 80px;
+}
+
+
+/* ===== BOTONES ===== */
+
+.btn {
+  display: inline-block;
+
+  margin-top: 15px;
+  padding: 10px 20px;
+
+  background: #2563eb;
+  color: white;
+
+  border-radius: 8px;
+  border: none;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+
+.btn:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #1e3a8a,
+      #2563eb
+    );
+
+  color: white;
+}
+
+
+/* ===== BOTÓN RESET ===== */
+
+.btn1 {
+  padding: 10px 20px;
+
+  background: #2c69ed;
+  color: white;
+
+  border-radius: 8px;
+  border: none;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+
+.btn1:hover {
+  transform: translateY(-5px);
+}
+
+
+/* ===== INPUT GLOBAL ===== */
+
+input,
+select,
+textarea {
+  width: 80%;
+
+  padding: 8px;
+  margin: 5px;
+
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+/* ===== ERRORES ===== */
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+
+/* ===== CONFIRMACIÓN ===== */
+
+.confirmacion {
+  background: white;
+}
